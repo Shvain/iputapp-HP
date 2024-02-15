@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2398" height="359" viewBox="0 0 2398 359">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_2" data-name="長方形 2" width="286" height="286" rx="73" transform="translate(113 397)" fill="none" stroke="red" stroke-width="40"/>
+    </clipPath>
+    <filter id="長方形_1" x="-10" y="41" width="306" height="306" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#00a2ff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="長方形_3" x="-38" y="13" width="362" height="362" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-color="#2c00ff"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="長方形_4" x="-38" y="13" width="362" height="362" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-3"/>
+      <feFlood flood-color="#06f"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_2" data-name="グループ 2" transform="translate(-113 -346)">
+    <g id="マスクグループ_33" data-name="マスクグループ 33" clip-path="url(#clip-path)">
+      <g id="グループ_1" data-name="グループ 1" transform="translate(-293 71)">
+        <g transform="matrix(1, 0, 0, 1, 406, 275)" filter="url(#長方形_1)">
+          <g id="長方形_1-2" data-name="長方形 1" transform="translate(5 56)" fill="none" stroke="#000" stroke-width="20">
+            <rect width="276" height="276" rx="75" stroke="none"/>
+            <rect x="10" y="10" width="256" height="256" rx="65" fill="none"/>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 406, 275)" filter="url(#長方形_3)">
+          <g id="長方形_3-2" data-name="長方形 3" transform="translate(-8 43)" fill="none" stroke="#000" stroke-width="30">
+            <rect width="302" height="302" rx="74" stroke="none"/>
+            <rect x="15" y="15" width="272" height="272" rx="59" fill="none"/>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 406, 275)" filter="url(#長方形_4)">
+          <g id="長方形_4-2" data-name="長方形 4" transform="translate(-8 43)" fill="none" stroke="#000" stroke-width="30">
+            <rect width="302" height="302" rx="74" stroke="none"/>
+            <rect x="15" y="15" width="272" height="272" rx="59" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="アプリ開発サークル" transform="translate(484 634)" font-size="248" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700" letter-spacing="-0.1em"><tspan x="0" y="0">アプリ開発サークル</tspan></text>
+  </g>
+</svg>

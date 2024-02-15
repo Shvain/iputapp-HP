@@ -1,0 +1,77 @@
+.timeline-all {
+    width: 90%;
+    height: 100%;
+    margin: 100px;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+}
+
+.day-2024-2-20,
+.day-2024-1-4,
+.day-2023-10-16,
+.day-2023-9-30,
+.day-2023-7-1 {
+    width: 993px;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.timeline-item {
+    width: 400px;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.date-container {
+    display: flex; /* 要素を横に並べる */
+    align-items: center; /* 垂直方向に中央揃え */
+}
+
+.date {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 15px;
+    background-color: #0066FF;
+    border-radius: 50%; 
+    left: -7px;
+    position: relative; 
+}
+
+.date-container p {
+  margin:  1; 
+  padding: 1; 
+}
+
+.day {
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    border-left: 3px solid #707070; 
+    padding-left: 30px; 
+    font-size: 20px;
+}
+
+.image-timeline {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-home-page {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+  
+

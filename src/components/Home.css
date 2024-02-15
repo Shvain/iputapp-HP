@@ -1,0 +1,41 @@
+.home-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.background-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(70%) ;
+}
+.x-icon{
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
+    font-size: 2rem 50px 2rem 0;
+    color: white;
+    cursor: pointer;
+}
+.instagram-icon{
+    position: absolute;
+    bottom: 0;
+    margin: 2rem 0 2rem 150px; /* 上、右、下、左の順にマージンを指定 */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.twitter-link {
+    cursor: pointer; /* カーソルを指に変更 */
+  }
+
+.instagram-link {
+    cusoor: pointer; /* カーソルを指に変更 */
+}

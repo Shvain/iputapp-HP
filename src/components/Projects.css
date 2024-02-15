@@ -1,0 +1,59 @@
+.lounascard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    top: 35%;
+    right: 50%;
+    background: #fff;
+    margin-right: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0px 10px rgba(0, 119, 255, 1);
+    animation: floatIn 0.5s forwards; /* ページが開いたときのアニメーションを設定 */
+    transition: transform 0.5s ease;
+}
+
+.lounas_link{
+    position: absolute;
+    bottom: -10px;
+    font-size: 20px;
+    font-family: 'Noto Sans jp', sans-serif;
+
+}
+
+.prinlup{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    top: 35%;
+    left: 50%;
+    margin-left: 50px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    animation: floatIn 0.5s ease forwards;
+}
+
+.prinlup-card{
+    margin-bottom: -30px;
+}
+
+.lounascard:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@keyframes floatIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
