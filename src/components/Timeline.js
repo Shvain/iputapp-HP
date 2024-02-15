@@ -30,7 +30,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/prinlup-card.png'} width='350'  alt='prinlup' className='prinlup-card'/>
+              <img src={process.env.PUBLIC_URL + '/prinlup-card.png'} width='300'  alt='prinlup' className='prinlup-card'/>
             </div>
           </div>
         <div className='day-2023-10-16'>
@@ -58,7 +58,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/lounas_card.png'} width='250'  alt='prinlup' className='prinlup-card'/>
+              <img src={process.env.PUBLIC_URL + '/Release-teaser.png'} width='500'  alt='prinlup' className='app-home-page'/>
             </div>
           </div>
         <div className='day-2023-7-1'>

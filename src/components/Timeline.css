@@ -24,7 +24,21 @@
     width: 400px;
     align-items: flex-start;
     margin-left: 100px;
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0; 
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
 .date-container {
     display: flex; /* 要素を横に並べる */
@@ -63,6 +77,8 @@
     height: 500px;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0; 
 }
 
 .app-home-page {

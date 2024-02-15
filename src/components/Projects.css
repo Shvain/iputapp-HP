@@ -7,7 +7,7 @@
     height: 500px;
     top: 35%;
     right: 50%;
-    background: #fff;
+    background: #F7F5F3;
     margin-right: 50px;
     border-radius: 50px;
     box-shadow: 0 0px 10px rgba(0, 119, 255, 1);
@@ -33,7 +33,7 @@
     top: 35%;
     left: 50%;
     margin-left: 50px;
-    background: #fff;
+    background: #F7F5F3;
     border-radius: 50px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
     animation: floatIn 0.5s ease forwards;

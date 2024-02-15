@@ -1,0 +1,48 @@
+.top {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.topmessage {
+    font-weight: 700;
+    font-size: 40px; 
+    animation: slideInFromBottom 0.6s ease forwards;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* 上に移動 */
+    }
+  }
+.page-down {
+    animation: bounce 2s infinite;
+}
+
+.page-down-container {
+    position: fixed;
+    bottom: 10%;
+    display: flex; 
+    align-items: center;
+    animation: slideInFromBottom 0.6s ease forwards;
+}
+
+.page-down-text {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+@keyframes slideInFromBottom {
+    from {
+      transform: translateY(30%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
