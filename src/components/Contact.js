@@ -8,9 +8,9 @@ const ContactForm = () => {
   const [message, setMessage] = useState(''); 
 
   const sendMail = () => {
-    const user_ID = 'dilPR_1dvw0GWaXjs';
-    const service_ID = 'service_y3u9j89';
-    const template_ID = 'template_edljyzv';
+    const user_ID = process.env.REACT_APP_EMAILJS_PUBLIC_ID;
+    const service_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const template_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
     if(
       user_ID !== undefined &&    //!==が===だった
