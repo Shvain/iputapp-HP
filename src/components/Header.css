@@ -5,15 +5,17 @@
 
 header {
     position: fixed;
-    top: 20px;
+    top: 0px;
     left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    backdrop-filter: blur(50px);
   }
+
   
   .logo {
     display: flex;

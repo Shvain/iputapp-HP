@@ -1,17 +1,59 @@
 import './Contact.css'; 
 import React, { useState } from 'react';
+import { init, send } from 'emailjs-com';
 
+const ContactForm = () => {
+  const [name, setName] = useState(''); 
+  const [mail, setMail] = useState(''); 
+  const [message, setMessage] = useState(''); 
 
-function App(){
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
+  const sendMail = () => {
+    const user_ID = 'dilPR_1dvw0GWaXjs';
+    const service_ID = 'service_y3u9j89';
+    const template_ID = 'template_edljyzv';
+
+    if(
+      user_ID !== undefined &&    //!==が===だった
+      service_ID !== undefined &&
+      template_ID !== undefined
+    ){
+      init(user_ID);
+
+      const template_params = {
+        to_name: name,
+        from_email: mail,
+        message: message,
+      };
+
+    send(service_ID, template_ID, template_params).then(() => {
+      window.alert('お問い合わせを送信致しました。');
+  
+      setName('');
+      setMail('');
+      setMessage('');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      });
+    }
+  }
+    const handleClick = (e) => {
+      console.log('name:', name);
+      console.log('mail:', mail);
+      console.log('message:', message);
+      console.log('handleCanceled 関数が呼び出されました。');
+      e.preventDefault();
+      sendMail();
+    };
+
+    const handleCanceled = () => {
+        setName('');
+        setMail('');
+        setMessage('');
+    };
+
+    const disableSend = 
+    name === '' || mail === ''  || message === '';
 
   return(
     <div>
@@ -19,48 +61,65 @@ function App(){
         <div className='title'>
           <h2 className='sayhello'>Say hello👋</h2>
           <p className='contact'>お気軽にお声掛けください！</p>
-          </div>
+        </div>
         <div className='container'>
           <h1 className="heading">Contact</h1>
-          <form className='form' onSubmit={handleSubmit}>
+          <form className='form'>
             <div className='form-field'>
               <label className='label'>Name:</label>
+              </div>
               <input
                 type="text"
-                name="name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                id="nameForm"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className='input'
               />
-            </div>
             <div className="form-field">
               <label className="label">E-mail:</label>
+              </div>
               <input
                 type="email"
-                name="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                id="mailForm"
+                value={mail}
+                onChange={(e) => setMail(e.target.value)}
                 className="input"
               />
-            </div>
             <div className="form-field">
               <label className="label">Message:</label>
+              </div>
               <textarea
                 type="text"
-                name="message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                id="mailContentForm"
+                rows="5"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="input_message"
               />
-            </div>
-            <button type="submit" className='button'>
-              送信
-            </button>
+              <div className='btns'>
+                <div>
+                  <button
+                        onClick={handleClick}
+                        disabled={disableSend}>
+                        <strong>送信</strong>
+                  </button>
+                </div>
+                <div>
+                    <button
+                        onClick={handleCanceled}>
+                      <strong>キャンセル</strong>
+                    </button>
+                </div>
+              </div>
           </form>
         </div>
-        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default ContactForm;
+
+
+
+
