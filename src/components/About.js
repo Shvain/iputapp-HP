@@ -37,12 +37,12 @@ const About = () => {
           <div className='join-us'>
             <h1 className='join-us-text'>JOIN US!</h1>
             <div className='join-us-sub'>
-              <h2 style={{fontSize: 30}}>私達は東京国際工科専門職大学の公認サークルです。</h2>
-              <Link to="/contact" className='link-contact' >
+              <h2 style={{fontSize: 25}}>私達は東京国際工科専門職大学の公認サークルです。</h2>
+              <Link to="/contact" className='link-contact'>
                 <button className='contact-button'>
-                  Let's Join!
+                  お問い合わせ
               </button>
-              </Link>
+            </Link>
             </div>
             </div>
         </div>

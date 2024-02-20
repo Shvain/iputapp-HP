@@ -13,6 +13,7 @@
     box-shadow: 0 0px 10px rgba(0, 119, 255, 1);
     animation: floatIn 0.5s forwards; /* ページが開いたときのアニメーションを設定 */
     transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 .lounas_link{

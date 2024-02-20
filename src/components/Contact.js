@@ -100,13 +100,13 @@ const ContactForm = () => {
                 <div>
                   <button
                         onClick={handleClick}
-                        disabled={disableSend}>
+                        disabled={disableSend} className='btns-send'>
                         <strong>送信</strong>
                   </button>
                 </div>
                 <div>
                     <button
-                        onClick={handleCanceled}>
+                        onClick={handleCanceled} className='btns-cancel'>
                       <strong>キャンセル</strong>
                     </button>
                 </div>

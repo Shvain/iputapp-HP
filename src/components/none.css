@@ -39,15 +39,12 @@
       margin: 100px auto;
   
     }
+
     .form {
       flex-direction: column;
     }
     
-    .form-field {
-      
-    }
-  
-  
+    
     .label {
       font-size: 20px;
       font-weight: bold;
