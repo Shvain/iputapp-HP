@@ -18,7 +18,7 @@ const About = () => {
             革新的なアプリケーションを生み出す場です。
             </h2>
             <div className='page-down-container'>
-              <PageDown color='black' height={40} width={40} className='page-down'/>
+              <PageDown color='black' className='page-down'/>
               <span className='page-down-text'>Scroll for more</span>
             </div>
           </div>
@@ -29,22 +29,22 @@ const About = () => {
             <h2 className='sub-title'>より実践的に、より専門的に。</h2>
             <h1 className='main-title'>アプリ開発とは総合芸術の結晶です。</h1>
             <p className='sub-title-text'>アプリ開発は多くのスキルによって構成されます。<br></br>
-            エンジニア・デザイナー・プロジェクトマネージャー・企画・マーケティング・プロモーションなど、<br></br>
+            エンジニア・デザイナー・プロジェクトマネージャー・企画・マーケティング・プロモーションなど、
             アプリ開発サークルではそれらのスキルを持つメンバーが集い、活動を行います。<br></br>
             </p>
-            <img src={process.env.PUBLIC_URL + '/Technology_asets.png'} width={700} alt='asetes' className='asetes-image'/>
+            <img src={process.env.PUBLIC_URL + '/Technology_asets.png'}  alt='asetes' className='asetes-image'/>
             </div>
           <div className='join-us'>
             <h1 className='join-us-text'>JOIN US!</h1>
             <div className='join-us-sub'>
-              <h2 style={{fontSize: 25}}>私達は東京国際工科専門職大学の公認サークルです。</h2>
+              <h2 className='iput'>私達は東京国際工科専門職大学の公認サークルです。</h2>
               <Link to="/contact" className='link-contact'>
                 <button className='contact-button'>
                   お問い合わせ
               </button>
             </Link>
             </div>
-            </div>
+          </div>
         </div>
     </div>
   );

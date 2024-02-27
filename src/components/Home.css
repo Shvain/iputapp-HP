@@ -23,6 +23,8 @@
     font-size: 2rem 50px 2rem 0;
     color: white;
     cursor: pointer;
+    height: 80px;
+    width: 80px;
 }
 .instagram-icon{
     position: absolute;
@@ -31,6 +33,8 @@
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    height: 80px;
+    width: 80px;
 }
 .twitter-link {
     cursor: pointer; /* カーソルを指に変更 */
@@ -38,4 +42,16 @@
 
 .instagram-link {
     cusoor: pointer; /* カーソルを指に変更 */
+}
+
+@media only screen and (max-width: 750px) {
+    .x-icon{
+        margin-bottom: 5px;
+        width: 50px;
+    }
+    .instagram-icon{
+        margin-bottom: 5px;
+        margin-left: 100px;
+        width: 50px;
+    }
 }

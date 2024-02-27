@@ -8,6 +8,7 @@
 .topmessage {
     font-weight: 700;
     font-size: 40px; 
+    margin: 20px;
     animation: slideInFromBottom 0.6s ease forwards;
 }
 
@@ -21,6 +22,8 @@
   }
 .page-down {
     animation: bounce 2s infinite;
+    height: 40px;
+    width: 40px;
 }
 
 .page-down-container {
@@ -49,15 +52,14 @@
 
   .scroll-page {
     display: grid;
-    width: 100%;
     margin-top: 50px;
     place-items: center;
   }
 
   .scroll-page-card {
     display: grid;
-    width: 100%;
-    margin-top: 50px;
+    width: 80%;
+    margin: 20px;
     place-items: center;
   }
 
@@ -74,6 +76,7 @@
 
   .asetes-image {
     margin: 50px;
+    width: 700px;
   }
 
   .join-us {
@@ -114,6 +117,8 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    background-color: #501300;
+    color: #fff;
     text-align: center;
   }
 
@@ -129,6 +134,83 @@
     cursor: pointer;
   }
 
-  .contact-button:hover {
-    background-color: #007bff;
+
+  .iput{
+    font-size: 25px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .topmessage {
+        font-size: 25px;
+        margin: 50px;
+    }
+    .page-down-container {
+      margin-left: 30px;
+    }
+    .page-down-text {
+      font-size: 15px;
+    }
+    .page-down {
+      height: 30px;
+      width: 30px;
+    }
+
+    .scroll-page {
+      display: grid;
+      width: 100%;
+    }
+
+    .scroll-page-card {
+      width: 90%;
+    }
+
+    .sub-title {
+      font-size: 20px;
+    }
+
+    .main-title {
+      font-size: 20px;
+    }
+
+    .sub-title-text{
+      font-size: 14px;
+    }
+
+    .asetes-image {
+      width: 100%;
+      margin: 20px;
+    }
+
+    .join-us {
+      height: 250px;
+      grid-auto-flow: row;
+      border-radius: 30px;
+      margin-top: 30px;
+      
+    }
+
+    .join-us-text {
+      padding: 0px;
+      margin-bottom: -40px;
+      font-size: 30px;
+    }
+
+    .link-contact {
+      width: 80%;
+      padding: 0px;
+      font-size: 15px;
+    }
+
+    .contact-button {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .iput{
+      margin-top: -30px;
+      width: 80%;
+      font-size: 15px;
+    }
+
+
   }

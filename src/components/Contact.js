@@ -26,30 +26,17 @@ const ContactForm = () => {
       };
 
     send(service_ID, template_ID, template_params).then(() => {
-      window.alert('お問い合わせを送信致しました。');
+      window.alert('お問い合わせいただきありがとうございます。\n 返信まで少々お待ちください。');
   
       setName('');
       setMail('');
       setMessage('');
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
       });
     }
   }
     const handleClick = (e) => {
-      console.log('name:', name);
-      console.log('mail:', mail);
-      console.log('message:', message);
-      console.log('handleCanceled 関数が呼び出されました。');
       e.preventDefault();
       sendMail();
-    };
-
-    const handleCanceled = () => {
-        setName('');
-        setMail('');
-        setMessage('');
     };
 
     const disableSend = 
@@ -65,7 +52,7 @@ const ContactForm = () => {
         <div className='container'>
           <h1 className="heading">Contact</h1>
           <form className='form'>
-            <div className='form-field'>
+            <div className='form-field-name'>
               <label className='label'>Name:</label>
               </div>
               <input
@@ -75,7 +62,7 @@ const ContactForm = () => {
                 onChange={(e) => setName(e.target.value)}
                 className='input'
               />
-            <div className="form-field">
+            <div className="form-field-mail">
               <label className="label">E-mail:</label>
               </div>
               <input
@@ -85,7 +72,7 @@ const ContactForm = () => {
                 onChange={(e) => setMail(e.target.value)}
                 className="input"
               />
-            <div className="form-field">
+            <div className="form-field-message">
               <label className="label">Message:</label>
               </div>
               <textarea
@@ -103,12 +90,6 @@ const ContactForm = () => {
                         disabled={disableSend} className='btns-send'>
                         <strong>送信</strong>
                   </button>
-                </div>
-                <div>
-                    <button
-                        onClick={handleCanceled} className='btns-cancel'>
-                      <strong>キャンセル</strong>
-                    </button>
                 </div>
               </div>
           </form>

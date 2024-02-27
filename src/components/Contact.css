@@ -1,17 +1,16 @@
 .container-wrapper {
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
     height: 100vh;
     background-color: #FFEBC8;
 
 }
 
 .title {
-    padding: 0 40px;
     align-items: flex-start;
     justify-content: center;
     background-color: #FFEBC8;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: "Noto Sans JP", sans-serif;
@@ -23,7 +22,7 @@
   
   
   .sayhello{
-      font-size: 80px;
+      font-size: 90px;
       color: #501300;
   }
   
@@ -33,11 +32,11 @@
       color: #000000;
   }
 
-
-  .container {
-    max-width: 500px;
-    margin: 100px auto;
+  .form-field-name, .form-field-mail, .form-field-message {
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
+
   
   .form {
     flex-direction: column;
@@ -70,13 +69,9 @@
     resize: none;
   }
 
-  .btn {
-    display: fixed;
-  }
-
-  .btns-send, .btns-cancel{
+  .btns-send {
     margin-top: 10px;
-    width: 50%;
+    width: 107%;
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -86,11 +81,11 @@
     border-radius: 10px;
     cursor: pointer;
   }
-
-  .btns-cancel{
-    background-color: #ff0000;
-  }
   
-  .btns-send:hover, .btns-cancel:hover{
+  .btns-send:hover{
     background-color: #0056b3;
+  }
+
+  @media only screen and (max-width: 750px) {
+    
   }

@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div>
       <Link to="https://twitter.com/lounas_app" target="_blank" className="twitter-link">
-        <X color='black' height={80} width={80} className='x-icon'/>
+        <X color='black'  className='x-icon'/>
       </Link>
       <Link to="https://instagram.com/lounas_app" target="_blank" className="instagram-link">
-        <Instagram color='black' height={80} width={80} className='instagram-icon'/>
+        <Instagram color='black'  className='instagram-icon'/>
       </Link>
       <div className='home-container'>
         <video autoPlay loop muted className='background-video'> 

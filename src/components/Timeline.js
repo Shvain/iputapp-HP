@@ -9,11 +9,11 @@ const Timeline = () => {
   return (
   <div>
     <div className='timeline-all'>
-      <div className="day-2024-2-20">
+      <div className="day-2024-3-1">
           <div className='timeline-item'>
               <div className='date-container'>
                 <span className='date'></span>
-                <p className='day'>2024/2/20</p>
+                <p className='day'>2024/3/1</p>
               </div>
               <div className='content'>
                 <h2>アプリ開発サークルの<br></br>ホームページを作成しました。</h2>
@@ -34,7 +34,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/prinlup-card.png'} width='300'  alt='prinlup' className='prinlup-card'/>
+              <img src={process.env.PUBLIC_URL + '/prinlup-card.png'} width='320'  alt='prinlup' className='prinlup-card'/>
             </div>
           </div>
         <div className='day-2023-10-16'>
@@ -48,7 +48,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/lounas_card.png'} width='250'  alt='prinlup' className='prinlup-card'/>
+              <img src={process.env.PUBLIC_URL + '/lounas_card.png'} width='250'  alt='prinlup' className='lounas-card'/>
             </div>
           </div>
         <div className='day-2023-9-30'>
@@ -62,7 +62,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/Release-teaser.png'} width='500'  alt='prinlup' className='app-home-page'/>
+              <img src={process.env.PUBLIC_URL + '/Release-teaser.png'} width='500'  alt='prinlup' className='lounas-presents'/>
             </div>
           </div>
         <div className='day-2023-7-1'>
@@ -76,7 +76,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/app_dev_logo.png'} width='250'  alt='prinlup' className='prinlup-card'/>
+              <img src={process.env.PUBLIC_URL + '/app_dev_logo.png'} width='250'  alt='prinlup' className='app-dev'/>
             </div>
           </div>
       </div>
