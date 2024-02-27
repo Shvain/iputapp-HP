@@ -182,7 +182,7 @@
     }
 
     .join-us {
-      height: 250px;
+      height: 230px;
       grid-auto-flow: row;
       border-radius: 30px;
       margin-top: 30px;
@@ -191,7 +191,7 @@
 
     .join-us-text {
       padding: 0px;
-      margin-bottom: -40px;
+      margin-bottom: 0px;
       font-size: 30px;
     }
 

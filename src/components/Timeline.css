@@ -1,7 +1,8 @@
 .timeline-all {
     width: 90%;
     height: 100%;
-    margin: 100px;
+    margin-left: 50px;
+    margin-top: 100px;
     display: grid;
     grid-auto-flow: row;
     place-items: center;
@@ -85,46 +86,61 @@
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
 
     .timeline-all {
-        width: 90%;
+        width: 100%;
         margin: 0px;
-        margin-top: 10%;
+        margin-top: 100px;
     }
 
     .timeline-item {
-        margin-left: 0px;
+        width: 280px;
+        margin: 0px;
+    }
+
+    .day-2024-3-1,
+    .day-2024-1-4,
+    .day-2023-10-16,
+    .day-2023-9-30,
+    .day-2023-7-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .day {
         font-size: 20px;
     }
 
-    .content {
-        padding-left: 20px; 
-        font-size: 17px;
+    .image-timeline {
+        width: 250px;
+        height: 250px;
     }
 
+    .content {
+        padding-left: 20px; 
+        font-size: 15px;
+    }
 
     .app-home-page {
-        width: 300px;
+        width: 240px;
     }
     
     .prinlup-card {
-        width: 220px;
+        width: 170px;
     }
     
     .lounas-card {
-        width: 180px;
+        width: 140px;
     }
     
     .lounas-presents {
-        width: 300px;
+        width: 250px;
     }
 
     .app-dev {
-        width: 180px;
+        width: 150px;
     }
 }
 
