@@ -21,10 +21,8 @@ const App = () => {
         <meta property='og:title' content='アプリ開発サークル' />
         <meta property='og:type' content='site' />
         <meta property='og:url' content={currentUrl} />
-        <meta property='og:image' content={process.env.PUBLIC_URL + '/OGP.jpg'} />
+        <meta property='og:image' content={process.env.OGP_URL + '/OGP.jpg'} />
         <meta property='og:description' content='IPUTの公認サークルです' />
-        <meta name='twitter:card' content='summary' />
-        <meta name='twitter:site' content='@akameco' />
         </Helmet>
       </div>
       <BrowserRouter>
