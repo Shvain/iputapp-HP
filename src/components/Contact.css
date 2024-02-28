@@ -93,18 +93,19 @@
     }
 
     .sayhello{
-      font-size: 50px;
+      font-size: 40px;
       margin-top: 50px;
     }
 
     .container {
       width: 60%;
-      height: 60%;
+      height: 40%;
       margin: 50px;
     }
 
     .contact{
-      font-size: 20px;
+      font-size: 18px;
+      margin-top: 0px;
     }
 
     .form {
