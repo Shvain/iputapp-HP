@@ -13,8 +13,8 @@ const Home = () => {
         <Instagram color='black'  className='instagram-icon'/>
       </Link>
       <div className='home-container'>
-        <video autoPlay loop muted playsinline className='background-video'> 
-        <source src={process.env.PUBLIC_URL + '/lounas_PV.mp4'} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        <video autoPlay loop muted playsInline webkit-playsInline className='background-video'> 
+        <source src={process.env.PUBLIC_URL + '/lounas_PV.mp4'} />
         Your browser does not support the video tag.
         </video>
       </div>

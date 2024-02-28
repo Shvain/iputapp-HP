@@ -14,6 +14,7 @@ const App = () => {
   const baseUrl = ""
   const currentUrl = baseUrl + window.location.pathname;
 
+
   return (
     <div>
       <div>
