@@ -85,6 +85,12 @@
         margin-right: 0;
         margin-bottom: 20px;
         top: 0;
+        transition: none;
+    }
+
+    .lounascard:hover{
+        transform: none;
+        transition: none;
     }
 
     .projects-lounas-card {
