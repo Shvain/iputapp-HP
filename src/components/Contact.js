@@ -56,6 +56,7 @@ const ContactForm = () => {
               <label className='label'>Name:</label>
               </div>
               <input
+                webkitAppearance="none"
                 type="text"
                 id="nameForm"
                 value={name}
@@ -66,6 +67,7 @@ const ContactForm = () => {
               <label className="label">E-mail:</label>
               </div>
               <input
+                webkitAppearance="none"
                 type="email"
                 id="mailForm"
                 value={mail}
@@ -76,6 +78,7 @@ const ContactForm = () => {
               <label className="label">Message:</label>
               </div>
               <textarea
+                webkitAppearance="none"
                 type="text"
                 id="mailContentForm"
                 rows="5"
