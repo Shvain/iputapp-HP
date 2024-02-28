@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projects.css';
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [isHovered, setIsHovered] = useState(false);
 
   const lounas = () => {
