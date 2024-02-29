@@ -97,6 +97,10 @@
       margin-top: 50px;
     }
 
+    .title {
+      margin-bottom: 20px;
+    }
+
     .container {
       width: 60%;
       height: 40%;
@@ -109,7 +113,7 @@
     }
 
     .form {
-      margin-top: 20px;
+      margin-top: 0px;
     }
 
     .label{
