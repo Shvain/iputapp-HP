@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import './App.css';
 import Helmet from 'react-helmet';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const App = () => {
   const baseUrl = ""
@@ -19,6 +20,7 @@ const App = () => {
     <div>
       <div>
       <Analytics />
+      <SpeedInsights />
         <Helmet>
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='og:title' content='アプリ開発サークル' />
