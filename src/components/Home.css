@@ -26,7 +26,7 @@
     height: 80px;
     width: 80px;
 }
-.instagram-icon{
+.zenn-icon{
     position: absolute;
     bottom: 0;
     margin: 2rem 0 2rem 150px; /* 上、右、下、左の順にマージンを指定 */
@@ -34,13 +34,13 @@
     color: white;
     cursor: pointer;
     height: 80px;
-    width: 80px;
+    width: 70px;
 }
 .twitter-link {
     cursor: pointer; /* カーソルを指に変更 */
   }
 
-.instagram-link {
+.zenn-link {
     cusoor: pointer; /* カーソルを指に変更 */
 }
 
@@ -49,9 +49,9 @@
         margin-bottom: 5px;
         width: 50px;
     }
-    .instagram-icon{
+    .zenn-icon{
         margin-bottom: 5px;
         margin-left: 100px;
-        width: 50px;
+        width: 40px;
     }
 }

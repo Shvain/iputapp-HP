@@ -28,7 +28,7 @@
   
   .contact{
       margin-top: 20px;
-      font-size: 30px;
+      font-size: 25px;
       color: #000000;
   }
 
@@ -108,8 +108,8 @@
     }
 
     .contact{
-      font-size: 18px;
-      margin-top: 0px;
+      font-size: 14px;
+      margin-top: 5px;
     }
 
     .form {
@@ -140,7 +140,7 @@
       padding: 5px;
       border-radius: 7px;
       height: 150px;
-      font-size: 20px;
+      font-size: 14px;
     }
 
     .btns-send {
