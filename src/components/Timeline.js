@@ -34,7 +34,7 @@ const Timeline = () => {
               </div>
             </div>
             <div className='image-timeline'>
-              <img src={process.env.PUBLIC_URL + '/prinlup-card.png'} width='320'  alt='prinlup' className='prinlup-card'/>
+              <img src={process.env.PUBLIC_URL + '/project_a.png'} width='400'  alt='prinlup' className='app-home-page'/>
             </div>
           </div>
         <div className='day-2023-10-16'>

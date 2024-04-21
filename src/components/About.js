@@ -33,7 +33,25 @@ const About = () => {
             アプリ開発サークルではそれらのスキルを持つメンバーが集い、活動を行います。<br></br>
             </p>
             <img src={process.env.PUBLIC_URL + '/Technology_asets.png'}  alt='asetes' className='asetes-image'/>
-            </div>
+          </div>
+          <div>
+            <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/76ead48a42594b3fb5541de3f5cee3e8" 
+                    title="IPUT App Dev. Co. -Overview 2024/4" 
+                    allowfullscreen="true" 
+                    styles = {{
+                      border: '0px',
+                      background: 'padding-box padding-box rgba(0, 0, 0, 0.1)',
+                      margin: '0px',
+                      padding: '0px',
+                      borderRadius: '6px',
+                      boxShadow: 'rgba(0, 0, 0, 0.2) 0px 5px 40px',
+                      width: '100%',
+                      height: 'auto',
+                      aspectRatio: '560 / 315',
+                    }}
+                    data-ratio="1.7777777777777777">
+            </iframe>
+          </div>
           <div className='join-us'>
             <h1 className='join-us-text'>JOIN US!</h1>
             <div className='join-us-sub'>

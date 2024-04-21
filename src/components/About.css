@@ -134,6 +134,12 @@
     cursor: pointer;
   }
 
+  .speakerdeck-iframe {
+    width: 800px;
+    aspect-ratio: 16/9;
+  }
+
+
 
   .iput{
     font-size: 25px;
@@ -211,6 +217,15 @@
       width: 80%;
       font-size: 15px;
     }
+    .speakerdeck-iframe {
+      width: 400px;
+      aspect-ratio: 16/9;
+    }
 
-
+    @media only screen and (max-width: 500px){
+      .speakerdeck-iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+    }
   }
